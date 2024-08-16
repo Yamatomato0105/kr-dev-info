@@ -17,11 +17,15 @@
     </style>
     <script type="text/javascript">
       setTimeout(function () {
+        document.querySelector('p').textContent = "Redirecting...";
+      }, 500); // 0.5秒後にテキストを変更
+
+      setTimeout(function () {
         window.location.href = "https://sites.google.com/view/kawaguchi-reilway-dev/";
       }, 2500);
     </script>
   </head>
   <body>
-    <p>Redirecting...</p>
+    <p>Loading...</p> <!-- 最初は「Loading...」を表示 -->
   </body>
 </html>
